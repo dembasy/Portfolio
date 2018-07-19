@@ -1,0 +1,225 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue",sans-serif;
+  font-weight: lighter;
+}
+h1{
+  font-size: 50px;
+  font-weight: bold;
+  font-family: 'Raleway'sans-serif;
+}
+.intro {
+  color: white;
+  height:auto;
+  margin: 0 auto;
+  padding: 50px;
+  font-family: 'Raleway', sans-serif;
+  margin-top: 35%;
+  text-align: center;
+
+}
+.logo{
+  font-family: 'Caesar Dressing';
+  font-size:60px;
+  padding-left: 1rem !important;
+  color: white;
+  letter-spacing: -5px;
+  line-height: 25px;
+  position: fixed;
+  float: left;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 10px;
+}
+/* Navigation scroll */
+.middle{
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 60px;
+}
+.mouse{
+  width: 20px;
+  height: 33px;
+  border: 4px solid white;
+  border-radius: 40px;
+}
+.mouse::before{
+  content: "";
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  top: 106%;
+  background: white;
+  transform: translateX(50%);
+  border-radius: 50%;
+  opacity: 1;
+  animation: mouse 2s infinite;
+}
+@keyframes mouse {
+  from{
+    opacity: 1;
+    top: 2px;
+  }
+  to{
+    opacity: 0;
+    top: 27px;
+  }}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url(../IMG/rawpixel-267079-unsplash.jpg );
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%)
+  z-index: 150;
+}
+
+.content {
+      width: 94%;
+      margin: 4em auto;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: justify;
+}
+
+
+nav {
+      position: fixed;
+      width: 100%;
+      line-height: 60px;
+      z-index: 60;
+}
+
+nav ul {
+      line-height: 60px;
+      list-style: none;
+      background: rgba(0, 0, 0, 0);
+      overflow: hidden;
+      color: #fff;
+      padding: 0;
+      text-align: right;
+      margin: 0;
+      padding-right: 40px;
+      transition: 1s;
+}
+
+nav.black ul {
+      background: #000;
+}
+
+nav ul li {
+      display: inline-block;
+      padding: 16px 40px;;
+}
+
+nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 16px;
+}
+
+.menu-icon {
+      line-height: 60px;
+      width: 100%;
+      background: #000;
+      text-align: right;
+      box-sizing: border-box;
+      padding: 15px 24px;
+      cursor: pointer;
+      color: #fff;
+      display: none;
+}
+
+@media(max-width: 786px) {
+
+      .logo {
+            position: fixed;
+            top: 0;
+            margin-top: 16px;
+      }
+
+      nav ul {
+            max-height: 0px;
+            background: #000;
+      }
+
+      nav.black ul {
+            background: #000;
+      }
+
+      .showing {
+            max-height: 34em;
+      }
+
+      nav ul li {
+            box-sizing: border-box;
+            width: 100%;
+            padding: 24px;
+            text-align: center;
+      }
+
+      .menu-icon {
+            display: block;
+      }
+      .typewriter h1 {
+        overflow:hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15px solid orange; /* The typwriter cursor */
+        white-space :nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15px; /* Adjust as needed */
+        animation:
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end;
+        font-size: 34.5px;
+      }
+      h4{
+        font-size: 40px;
+      }
+}
+
+.scroll{
+  margin-top: 30px;
+  margin-bottom: 1rem;
+  margin-left: -14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+  color: #939393;
+  font-size: 12px
+}
+main, footer {
+  padding: 5rem;
+}
+
+main {
+  background: purple;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  color: white;
+  min-height: 1000px;
+}
+
+footer {
+  background: black;
+}
+
+ul {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.5rem;
+  margin: .5rem 0;
+}
